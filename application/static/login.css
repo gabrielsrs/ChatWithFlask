@@ -1,0 +1,29 @@
+body {
+    overflow: hidden;
+}
+
+form {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #9921e8;
+    background-image: linear-gradient(160deg, #9921e8 0%, #5f72be 74%);
+}
+
+form input {
+    width: 250px;
+    text-align: center;
+    height: 20px;
+    font-size: 20px;
+    font-family: cursive;
+    border: none;
+    box-shadow: none;
+    padding: 10px;
+    border-radius: 3px;
+    margin-top: 8px;
+    outline: none;
+    transition: background-color 5000s ease-in-out 0s;
+}

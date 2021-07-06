@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login.css') }}">
+{% endblock %}
+
+{% block content %}
+    <form method="POST">
+        <h2>Enter Your Username</h2>
+        <input type="text" name="name_user" maxlength="20" minlength="3">
+    </form>
+{% endblock %}

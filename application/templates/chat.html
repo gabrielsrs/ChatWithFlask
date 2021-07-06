@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='chat.css' ) }}" media="screen">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block content %}
+    <section>
+        <div class="chat">
+            <div id="box">
+                <div class="messages"></div>
+            </div>
+            <form class="input-text">
+                <input type="text" placeholder="Enter text here" required>
+            </form>
+        </div>
+    </section>
+{% endblock %}
+
+{% block script %}
+    <script src="../static/js/chat.js"></script>
+{% endblock %}

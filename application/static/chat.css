@@ -1,0 +1,97 @@
+section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9921e8;
+    background-image: linear-gradient(160deg, #9921e8 0%, #5f72be 74%);
+}
+
+.chat {
+    width: 500px;
+    height: 500px;
+    border: solid;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+}
+
+#box {
+    margin-top: 20px;
+    width: 300px;
+    height: 600px;
+    border: solid;
+    display: flex;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+.input-text {
+    margin: 20px 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.input-text input {
+    width: 280px;
+    word-break: break-word;
+    height: 20px;
+    font-size: 20px;
+    font-family: cursive;
+    border: solid;
+    box-shadow: none;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    background: #ccc;
+}
+
+.messages {
+    margin-top: auto;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+/*
+.messages > :first-child { margin-top: auto }
+*/
+
+.messages div {
+    padding: 0 5px;
+    margin-top: 2.5px;
+    display: flex;
+}
+
+.messages div span {
+    margin-left: 4px;
+    word-break: break-word;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
